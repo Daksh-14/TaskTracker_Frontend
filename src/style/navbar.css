@@ -1,0 +1,59 @@
+nav>ul{
+    display: flex;
+    list-style: none;
+    min-width: 20vw;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+nav li{
+    margin: auto 0;
+}
+
+nav li button{
+    /* border: none; */
+    border-style: none;
+    font-size: 1.4rem;
+    background-color: #4343a3;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav{
+    display: flex;
+    width: 100vw;
+    background-color: #4343a3;
+    /* height: 12vh; */
+    font-size: 1.5rem;
+    position: sticky;
+    top:0;
+    z-index: 10000;
+    padding: 3vh 0;
+    align-items: center;
+}
+
+nav>a{
+    margin-right: auto;
+    margin-left: 7vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width:920px) {
+    nav{
+        font-size: 1.1rem;
+        padding: 2vh 0;
+    }
+    nav li button{
+        font-size: 1.1rem;
+    }
+    nav>ul{
+        gap: 3vw;
+        margin-right: 2vw;
+    }
+}

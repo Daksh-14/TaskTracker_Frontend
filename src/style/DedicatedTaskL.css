@@ -1,0 +1,102 @@
+.task-detail{
+    width: 100vw;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 2vh;
+    background-color:rgb(240, 244, 248) ;
+}
+
+.task-button-top{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2vh;
+}
+
+.task-button-top button{
+    min-width: 8vw;
+    padding: 1vh 0;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: rgb(225, 234, 243);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.task-heading{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    font-size: 1.25rem;
+}
+
+.task-flex{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.task-data{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-bottom: 4vh;
+}
+
+.task-meta{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.file-buttons{
+    display: flex;
+    gap: 1vw;
+}
+
+.task-fileClose{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1vh;
+}
+
+.task-flex button{
+    min-width: 11vw;
+    padding: 1vh 0;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: rgb(225, 234, 243);
+}
+
+.file-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.task-container{
+    border-radius: 10px;
+    /* width: 85vw; */
+    background-color: rgb(251, 251, 253);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 70vh;
+    margin: 4vh;
+    padding: 1.5vh 1.5vw;
+}
+
+@media screen and (max-width:1000px) {
+    .task-flex{
+        flex-direction: column;
+    }
+    .task-data{
+        width: 100%;
+    }
+}

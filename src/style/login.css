@@ -1,0 +1,115 @@
+.form_outer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.form_layout{
+    /* height:55%; */
+    width: 40%; 
+    background-color: rgb(231, 231, 247);
+    /* background-color:rgb(240, 244, 248) ; */
+
+    border-radius: 2vh;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.SignUp{
+    height: 80vh;
+}
+
+.form_layout>div{
+    display: flex;
+    justify-content: center;
+    margin: 4.5vh;
+}
+
+.form_data{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+    width: 100%;
+    height: 100%;
+}
+
+.form_value{
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+    /* align-items: center; */
+    font-size: 1.5rem;
+}
+
+.form_value>label{
+    margin-left:3vw;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.form_value>input{
+    margin-right: 3vw;
+    width: 55%;
+    font-size: 1rem;
+    padding: 0 0.5vw;
+    border-radius: 1vh;
+    border: none;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+}
+
+.form_layout button{
+    /* height: 100%; */
+    padding: 1vh 1vw;
+    min-width: 9vw;
+    font-size: 1.3rem;
+    border-radius: 1.5vh;
+    background-color: rgb(67, 67, 163);
+    color: white;
+}
+
+form .button_container{
+    width: 100%;
+    /* height: 8vh; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+
+}
+
+.form_layout p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width:972px) {
+    .form_layout{
+        width: 65%;
+    }
+    .form_layout button{
+        min-width: 15vw;
+    }
+    .form_value{
+        font-size: 1.25rem;
+    }
+    .form_value>input{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:534px) {
+    .form_layout{
+        width: 90%;
+    }
+    .form_layout button{
+        min-width: 20vw;
+        padding: 2vw;
+    }
+}
