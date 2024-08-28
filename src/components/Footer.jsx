@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div style={styles.bottomBar}>
-        <p style={styles.copyText}>© 2024 Your Company Name. All rights reserved.</p>
+        <p style={styles.copyText}>© 2024 TaskTracker. All rights reserved.</p>
       </div>
     </footer>
   );

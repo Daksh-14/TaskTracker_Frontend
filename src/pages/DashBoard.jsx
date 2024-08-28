@@ -100,7 +100,7 @@ const DashBoard = () => {
                         <ul>
                             {filteredTeams.map(team => (
                                 <li key={team.id}>
-                                    <Link to={`../team/${team.id}`}>
+                                    <Link to={`/team/${team.id}`}>
                                     <button style={{width:'100%'}} ><div style={{ display: 'flex', alignItems: 'center', width:'80%' }}
                                     >{team.teamname}</div></button>
                                     </Link>

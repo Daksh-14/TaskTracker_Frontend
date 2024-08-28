@@ -51,7 +51,7 @@ function MyCalendar() {
           value={selectedDate}
           tileClassName={({ date }) =>
             highlight.includes(date.toLocaleString().split(',')[0])
-              ? 'highlight' // Apply your custom CSS class
+              ? 'highlight'
               : ''
           }
         />
@@ -65,7 +65,7 @@ function MyCalendar() {
           <p style={{fontSize:'1.3rem'}}>Events on {selectedDate.toDateString()}:</p>
           {selectedEvents.map((event, index) => (
             <div key={index} style={{margin:'0.5vh 0', backgroundColor:'#f0f4f8',textAlign:'center',padding:'0.5vh', borderRadius:'5px', color:'black'}}>
-              <Link to='../'>{event.title}</Link>
+              <Link to='/task/event.id'>{event.title}</Link>
             </div>
           ))}
           </div>
