@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
       setIsLoggedIn(false);
     }
     catch(error){
-      comsole.log("try again");
+      // comsole.log("try again");
     }
   }
 
@@ -26,7 +26,7 @@ export const AuthProvider = ({ children }) => {
         const response = await axiosInstance.get('/auth/check');
         setIsLoggedIn(response.data.isLoggedIn);
       } catch (error) {
-        console.error('Error checking auth status', error);
+        // console.error('Error checking auth status', error);
         setIsLoggedIn(false);
       } finally {
         setAuthCheck(false);
