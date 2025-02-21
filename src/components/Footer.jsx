@@ -9,28 +9,28 @@ const Footer = () => {
         <div style={styles.column}>
           <h4 style={styles.heading}>Company</h4>
           <ul style={styles.list}>
-            <li style={styles.listItem}><Link to="/about" style={styles.link}>About Us</Link></li>
-            <li style={styles.listItem}><Link to="/careers" style={styles.link}>Careers</Link></li>
-            <li style={styles.listItem}><Link to="/blog" style={styles.link}>Blog</Link></li>
-            <li style={styles.listItem}><Link to="/contact" style={styles.link}>Contact Us</Link></li>
+            <li style={styles.listItem}><Link to="/about" style={styles.link} aria-label="Go to about page">About Us</Link></li>
+            <li style={styles.listItem}><Link to="/careers" style={styles.link} aria-label="Go to careers page">Careers</Link></li>
+            <li style={styles.listItem}><Link to="/blog" style={styles.link} aria-label="Go to blog page">Blog</Link></li>
+            <li style={styles.listItem}><Link to="/contact" style={styles.link} aria-label="Go to contact page">Contact Us</Link></li>
           </ul>
         </div>
         <div style={styles.column}>
           <h4 style={styles.heading}>Resources</h4>
           <ul style={styles.list}>
-            <li style={styles.listItem}><Link to="/help" style={styles.link}>Help Center</Link></li>
-            <li style={styles.listItem}><Link to="/faqs" style={styles.link}>FAQs</Link></li>
-            <li style={styles.listItem}><Link to="/privacy-policy" style={styles.link}>Privacy Policy</Link></li>
-            <li style={styles.listItem}><Link to="/terms" style={styles.link}>Terms of Service</Link></li>
+            <li style={styles.listItem}><Link to="/help" style={styles.link} aria-label="Go to help page">Help Center</Link></li>
+            <li style={styles.listItem}><Link to="/faqs" style={styles.link} aria-label="Go to faqs page">FAQs</Link></li>
+            <li style={styles.listItem}><Link to="/privacy-policy" style={styles.link} aria-label="Go to privacy policy page">Privacy Policy</Link></li>
+            <li style={styles.listItem}><Link to="/terms" style={styles.link} aria-label="Go to terms and conditions page">Terms of Service</Link></li>
           </ul>
         </div>
         <div style={styles.column}>
           <h4 style={styles.heading}>Connect</h4>
           <div style={styles.socialIcons}>
-            <a href="https://facebook.com" style={styles.socialLink}><Facebook /></a>
-            <a href="https://twitter.com" style={styles.socialLink}><Twitter /></a>
-            <a href="https://instagram.com" style={styles.socialLink}><Instagram /></a>
-            <a href="https://linkedin.com" style={styles.socialLink}><LinkedIn /></a>
+            <a href="https://facebook.com" style={styles.socialLink} aria-label="Facebook link"><Facebook /></a>
+            <a href="https://twitter.com" style={styles.socialLink} aria-label="twitter link"><Twitter /></a>
+            <a href="https://instagram.com" style={styles.socialLink} aria-label="instagram link"><Instagram /></a>
+            <a href="https://linkedin.com" style={styles.socialLink} aria-label="linkedin link"><LinkedIn /></a>
           </div>
         </div>
       </div>
