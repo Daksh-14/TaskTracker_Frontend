@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav>
         
-        <Link to="/"><img src={logo} style={{width:'30vw',maxWidth:'200px', height:'auto'}}/></Link>
+        <Link to="/" aria-label="Go to Home"><img src={logo} style={{width:'30vw',maxWidth:'200px', height:'auto'}} alt='Task Tracker Logo'/></Link>
         <ul style={{marginRight:'2vw'}}>
         {isLoggedIn ? (
           <>
@@ -18,8 +18,8 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <li><Link to="/login">Login</Link></li>
-            <li><Link to="/signup">Sign Up</Link></li>
+            <li><Link to="/login" aria-label="Go to Login page">Login</Link></li>
+            <li><Link to="/signup" aria-label="Go to Signup page">Sign Up</Link></li>
           </>
         )}
       </ul>
