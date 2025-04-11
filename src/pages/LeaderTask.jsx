@@ -21,7 +21,7 @@ const LeaderTask = () => {
         const response = await axiosInstance.get(`/task/${teamId}/all`);
         setTasks(response.data);
       } catch (error) {
-        console.error("Error fetching tasks", error);
+        // console.error("Error fetching tasks", error);
       } finally {
         setLoading(false);
       }
@@ -39,7 +39,7 @@ const LeaderTask = () => {
         setIsLeader(response.data);
       }
       catch(error){
-        console.log(error)
+        // console.log(error)
       }
       finally{
         setLoading(false);
@@ -54,7 +54,7 @@ const LeaderTask = () => {
       navigate('../../created');
     }
     catch{
-      console.log(error);
+      // console.log(error);
     }
   }
   return (

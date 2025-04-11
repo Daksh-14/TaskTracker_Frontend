@@ -21,7 +21,7 @@ const JoinForm = () => {
       await axiosInstance.post('/team/join', { formData });
       navigate('/task-tracker/joined');
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     } finally {
       setFormData({
         joincode: ''

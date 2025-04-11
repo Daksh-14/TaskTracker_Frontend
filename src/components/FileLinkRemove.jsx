@@ -17,7 +17,7 @@ const TaskFilesLinks = () => {
         setFiles(JSON.parse(res.data.fileurls));
         setLinks(JSON.parse(res.data.links));
       } catch (error) {
-        console.error('Error fetching task data:', error);
+        // console.error('Error fetching task data:', error);
       } finally {
         setLoading(false);
       }
@@ -50,7 +50,7 @@ const TaskFilesLinks = () => {
 
       navigate(`../${task}`)
     } catch (error) {
-      console.error('Error updating files and links:', error);
+      // console.error('Error updating files and links:', error);
     }
   };
 

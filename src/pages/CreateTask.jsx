@@ -57,10 +57,13 @@ const CreateTask = () => {
         min:59
       });
 
-      fileInputRef.current.value = null;
+      if (fileInputRef.current) {
+        fileInputRef.current.value = null;
+      }
+      
       navigate(`../${teamId}`);
     } catch (error) {
-      console.error('Error adding task', error);
+      // console.error('Error adding task', error);
     }
     finally{
       setLoading(false);

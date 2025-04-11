@@ -25,7 +25,7 @@ const AddTask = (props) => {
         const mem1 = mem.map((obj) => ({ ...obj, name: `${obj.firstname} ${obj.lastname}` }));
         setMembers(mem1);
       } catch (error) {
-        console.log(error);
+        // console.log(error);
       }
       finally{
         setLoading(false);
@@ -63,7 +63,7 @@ const AddTask = (props) => {
             axiosInstance.post('task/addtask',{uid:id,taskid:task});
         }
         catch(err){
-            console.log(err);
+            // console.log(err);
         }
     })
     setSelectedMembers([]);

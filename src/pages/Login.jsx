@@ -24,7 +24,7 @@ const Login = () => {
         login();
         navigate('/'); // Redirect to home page after successful login
     } catch (error) {
-        console.log(error);
+        // console.log(error);
     } finally {
         setFormData({
             email: '',

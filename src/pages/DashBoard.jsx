@@ -20,7 +20,7 @@ const DashBoard = () => {
                 setLen({leader:response.data.teams.length,joined:response2.data.teams.length})
                 setTeams(arr);
             } catch (error) {
-                console.error('Error fetching created teams', error);
+                // console.error('Error fetching created teams', error);
             } finally {
                 setLoading(false);
             }
@@ -33,7 +33,6 @@ const DashBoard = () => {
     const filteredTeams = teams.filter(team => {
         return team.teamname.toLowerCase().includes(searchQuery.toLowerCase());
     });
-    console.log(teams);
     
 
     const handleSearchChange = (e) => {

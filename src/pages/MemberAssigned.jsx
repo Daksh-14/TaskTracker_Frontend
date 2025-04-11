@@ -20,7 +20,7 @@ const MemberAssigned = (props) => {
         const mem1 = data.map((obj) => ({ ...obj, name: `${obj.firstname} ${obj.lastname}` }));
         setMembers(mem1);
       } catch (error) {
-        console.log(error);
+        // console.log(error);
       }
       finally{
         setLoading(false);
@@ -57,7 +57,7 @@ const MemberAssigned = (props) => {
             axiosInstance.post('task/remove',{uid:id,taskid:task});
         }
         catch(err){
-            console.log(err);
+            // console.log(err);
         }
     })
     setSelectedMembers([]);

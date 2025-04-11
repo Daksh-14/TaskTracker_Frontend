@@ -15,7 +15,7 @@ const CreatedTeams = () => {
         const response = await axiosInstance.get('/team/all/created');
         setTeams(response.data.teams);
       } catch (error) {
-        console.error('Error fetching created teams', error);
+        // console.error('Error fetching created teams', error);
       } finally {
         setLoading(false);
       }

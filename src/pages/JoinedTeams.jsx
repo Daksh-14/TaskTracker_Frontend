@@ -15,7 +15,7 @@ const JoinedTeams = () => {
         const response = await axiosInstance.get('/team/all/joined');
         setTeams(response.data.teams);
       } catch (error) {
-        console.error('Error fetching joined teams', error);
+        // console.error('Error fetching joined teams', error);
       } finally {
         setLoading(false);
       }

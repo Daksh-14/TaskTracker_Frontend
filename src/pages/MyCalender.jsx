@@ -25,7 +25,7 @@ function MyCalendar() {
         setHighlight(arr);
         setEvents(temp);
       } catch (error) {
-        console.log(error);
+        // console.log(error);
       }
     };
     fetchData();

@@ -21,7 +21,7 @@ const CreateForm = () => {
         await axiosInstance.post('/team/create', { formData });
         navigate('/task-tracker/created'); 
     } catch (error) {
-        console.log(error);
+        // console.log(error);
     } finally {
         setFormData({
             teamName:''
@@ -36,7 +36,6 @@ const CreateForm = () => {
         [name]: value
     }));
   };
-  console.log(formData);
   return (
     <div className='form_outer'>
       {loading ? (

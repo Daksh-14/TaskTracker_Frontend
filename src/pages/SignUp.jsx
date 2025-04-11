@@ -7,6 +7,7 @@ import "../style/login.css"
 const SignUp = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const {login}=useAuth()
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -19,9 +20,10 @@ const SignUp = () => {
     setLoading(true);
     try {
         await axiosInstance.post('/auth/register', { formData });
+        login();
         navigate('/'); // Redirect to home page after successful login
     } catch (error) {
-        console.log(error);
+        // console.log(error);
     } finally {
         setFormData({
             firstName: '',
