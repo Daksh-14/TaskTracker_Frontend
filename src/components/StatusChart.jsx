@@ -30,7 +30,6 @@ const StatusChart=()=>{
                     a++;
                 }
             });
-            console.log(a,b,c)
             setdata([a,b,c]);
         }
         fetch();

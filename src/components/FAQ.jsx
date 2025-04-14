@@ -21,7 +21,6 @@ const FAQ = () => {
         question: 'How do I create and assign tasks?',
         answer: `To create a task, navigate to the "Tasks" section and click on "Add Task." Fill in the task details, including title, description, due date, and assign it to the desired team members. You can also attach files if necessary.`,
       },
-    // Add more FAQs as needed
   ];
 
   const handleToggle = (index) => {

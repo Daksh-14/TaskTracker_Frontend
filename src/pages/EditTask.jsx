@@ -58,8 +58,10 @@ const EditTask=()=>{
             min:59
           });
     
-          fileInputRef.current.value = null;
-          navigate(`../`);
+          if (fileInputRef.current) {
+            fileInputRef.current.value = null;
+          }
+          navigate(-1);
         } catch (error) {
           // console.error('Error adding task', error);
         }

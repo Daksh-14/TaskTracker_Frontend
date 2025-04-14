@@ -4,7 +4,6 @@ import "../style/TaskCard.css";
 
 const TaskCard = ({taskid,title,duedate,firstname,lastname}) => {
   const date=new Date(duedate);
-  console.log(date.toLocaleDateString());
   
   return (
     <div className="TaskCard_outer">

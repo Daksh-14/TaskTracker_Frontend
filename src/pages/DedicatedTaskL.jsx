@@ -49,7 +49,7 @@ const DedicatedTaskL = () => {
 
 
 
-  const fileUrls = data.fileurls ? JSON.parse(data.fileurls) : [];
+  const fileUrls = data.fileurls ? JSON.parse(data.fileurls).map(url => url.replace(/^http:/, 'https:')) : [];
   const links = data.links ? JSON.parse(data.links) : [];
   const deleteTask = async () => {
     try {
